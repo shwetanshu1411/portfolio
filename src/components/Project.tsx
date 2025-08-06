@@ -110,6 +110,7 @@ import Link from "next/link";
 import project1 from "@/app/Hospital.png"; // Ensure correct image path
 import project2 from "@/app/Anonymous.png"; // Add a second project image
 import project3 from "@/app/mental.png"; // Add a third project image
+import project4 from "@/app/ai-coach.png"; // Add a fourth project image
 
 export function ThreeDCardDemo() {
   return (
@@ -192,6 +193,8 @@ export function ThreeDCardDemo() {
         </CardContainer>
       </div>
 
+
+ <div className="mt-12 flex flex-wrap justify-center gap-8">
       <CardContainer className="inter-var">
           <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] max-w-[30rem] h-auto rounded-xl p-6 border">
             <CardItem translateZ="50" className="text-xl font-bold text-neutral-600 dark:text-white">
@@ -208,7 +211,7 @@ export function ThreeDCardDemo() {
                 height={1000}
                 width={1000}
                 className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-                alt="Project 2 Thumbnail"
+                alt="Project 4 Thumbnail"
               />
             </CardItem>
 
@@ -225,6 +228,43 @@ export function ThreeDCardDemo() {
             </div>
           </CardBody>
         </CardContainer>
+
+        <CardContainer className="inter-var">
+          <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] max-w-[30rem] h-auto rounded-xl p-6 border">
+            <CardItem translateZ="50" className="text-xl font-bold text-neutral-600 dark:text-white">
+              AI-Powered Career Portal
+            </CardItem>
+
+            <CardItem as="p" translateZ="60" className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300">
+            An AI-driven career platform featuring industry insights, resume tools, mock interviews, and Clerk-based authentication.
+            </CardItem>
+
+            <CardItem translateZ="100" className="w-full mt-4">
+              <Image
+                src={project4}
+                height={1000}
+                width={1000}
+                className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                alt="Project 2 Thumbnail"
+              />
+            </CardItem>
+
+            <div className="flex justify-center items-center mt-6">
+              <CardItem
+                translateZ={20}
+                as={Link}
+                href="https://github.com/shwetanshu1411/saas-application-ai-coach-"
+                target="__blank"
+                className="px-4 py-2 rounded-xl bg-black dark:bg-white text-white dark:text-black text-xs font-bold"
+              >
+                View Project →
+              </CardItem>
+            </div>
+          </CardBody>
+        </CardContainer>
+        </div>
+
+        
     </div>
   );
 }

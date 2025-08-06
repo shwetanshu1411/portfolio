@@ -152,24 +152,20 @@ export function TypewriterEffectSmoothDemo() {
       className:
         "text-3xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-neutral-50 to-neutral-400",
     },
-    {
-      text: "a Full-Stack Developer.",
-      className:
-        "text-3xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600",
-    },
+  
   ];
 
   return (
     <div className="flex flex-col md:flex-row items-center justify-between min-h-screen px-6 md:px-16 lg:px-24 pt-24 pb-10 gap-10 md:gap-16">
       {/* Left Side: Text Content */}
-      <div className="md:w-1/2 space-y-6 text-center md:text-left">
+      <div className="md:w-1/2 w-full space-y-6 text-center md:text-left">
         <TypewriterEffectSmooth words={words} />
-        <p className="text-neutral-300 text-lg md:text-xl leading-relaxed">
-          I am a Software Engineer from India who enjoys transforming ideas into digital realities.
-          Skilled in both <span className="text-blue-400 font-semibold">frontend</span> and <span className="text-purple-400 font-semibold">backend</span> development using 
-          <span className="text-green-400 font-semibold"> MERN</span> and <span className="text-pink-400 font-semibold">Next.js</span>, I also have a deep appreciation 
-          for the intricacies of <span className="text-green-400 font-semibold">C/C++ programming</span>.
-        </p>
+   <p className="text-neutral-300 text-sm sm:text-base md:text-lg leading-relaxed text-justify max-w-full break-words">
+  I am a Software Engineer from India who enjoys transforming ideas into digital realities.
+  Skilled in both <span className="text-blue-400 font-semibold">frontend</span> and <span className="text-purple-400 font-semibold">backend</span> development using 
+  <span className="text-green-400 font-semibold"> MERN</span> and <span className="text-pink-400 font-semibold">Next.js</span>, I also have a deep appreciation 
+  for the intricacies of <span className="text-green-400 font-semibold">C/C++ programming</span>.
+</p>
 
         {/* Hire Me Button */}
         <div className="mt-6">
