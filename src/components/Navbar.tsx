@@ -51,9 +51,11 @@ interface NavbarProps {
 }
 
 function Navbar({ className }: NavbarProps) {
-  const [active, setActive] = useState<string | null>(null);
   const [isOpen, setIsOpen] = useState(false); // mobile menu toggle
+  const [active, setActive] = useState<string | null>(null); // track active menu item
 
+
+    console.log(active); 
   return (
     <div className={cn("fixed top-0 inset-x-0 max-w-2xl mx-auto z-50", className)}>
       {/* Hamburger for mobile */}
@@ -64,13 +66,13 @@ function Navbar({ className }: NavbarProps) {
       </div>
 
       {/* Menu for both desktop and mobile */}
-      <Menu isOpen={isOpen}>
-        <a href="#home">Home</a>
-        <a href="#skill">Skills</a>
-        <a href="#project">Projects</a>
-        <a href="#service">Services</a>
-        <a href="#contact">Contact</a>
-      </Menu>
+     <Menu isOpen={isOpen} setActive={setActive}>
+  <a href="#home" onClick={() => setActive("home")}>Home</a>
+  <a href="#skill" onClick={() => setActive("skill")}>Skills</a>
+  <a href="#project" onClick={() => setActive("project")}>Projects</a>
+  <a href="#service" onClick={() => setActive("service")}>Services</a>
+  <a href="#contact" onClick={() => setActive("contact")}>Contact</a>
+</Menu>
     </div>
   );
 }
