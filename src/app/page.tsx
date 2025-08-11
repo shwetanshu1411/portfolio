@@ -14,7 +14,9 @@ export default function Home() {
       <section id="home"><TypewriterEffectSmoothDemo /></section>
       <section id="skill"><Skill /></section>
       <section id="project"><Project/></section>
-      <section id="service"><Services /></section>
+      <section id="service">
+        <Services testimonials={[]} />
+      </section>
       <section id="contact"><Contact /></section>
       <Footer />
 

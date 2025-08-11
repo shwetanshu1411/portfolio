@@ -75,7 +75,7 @@
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { 
   SiReact, SiJavascript, SiNextdotjs, SiNodedotjs, SiExpress, 
-  SiMongodb, SiMysql, SiDocker, SiKubernetes, SiGithubactions, 
+  SiMongodb, SiMysql, SiDocker, SiKubernetes, 
   SiCplusplus, SiSocketdotio, 
   SiC
 } from "react-icons/si";

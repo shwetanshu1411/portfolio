@@ -13,7 +13,7 @@ const nextConfig: NextConfig = {
     domains: ["assets.aceternity.com", "images.unsplash.com"],
   },
   eslint: {
-    // ✅ This will prevent build failure due to ESLint errors on Vercel
+    
     ignoreDuringBuilds: true,
   },
 };
