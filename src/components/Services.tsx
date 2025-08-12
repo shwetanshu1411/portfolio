@@ -1,4 +1,6 @@
-import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
+
+import AnimatedTestimonials from "./ui/animated-testimonials";
+
 import front from "@/app/frontend1.webp";
 import back from "@/app/backennd1.webp";
 import dev from "@/app/Devops1.webp";

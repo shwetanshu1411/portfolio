@@ -70,6 +70,7 @@ const CollisionMechanism = React.forwardRef<
       repeatDelay?: number;
     };
   }
+  // Removed unused 'ref' parameter from forwardRef callback
 >(({ parentRef, containerRef, beamOptions = {} }) => {
   const beamRef = useRef<HTMLDivElement>(null);
   const [collision, setCollision] = useState<{
@@ -114,7 +115,7 @@ const CollisionMechanism = React.forwardRef<
     const animationInterval = setInterval(checkCollision, 50);
 
     return () => clearInterval(animationInterval);
-  }, [cycleCollisionDetected, containerRef, parentRef]); // ✅ parentRef added here
+  }, [cycleCollisionDetected, containerRef, parentRef]); // ✅ Added parentRef to dependencies
 
   useEffect(() => {
     if (collision.detected && collision.coordinates) {

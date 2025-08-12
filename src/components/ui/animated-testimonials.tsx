@@ -22,7 +22,7 @@ export default function AnimatedTestimonials({
 
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % testimonials.length)
-    }, 5000)
+    }, 4000)
 
     return () => clearInterval(interval)
   }, [testimonials])
@@ -45,9 +45,9 @@ export default function AnimatedTestimonials({
           <Image
             src={testimonials[index].src}
             alt={testimonials[index].name}
-            width={64}
-            height={64}
-            className="mx-auto mb-4 w-16 h-16 rounded-full object-cover"
+            width={85}
+            height={85}
+            className="mx-auto mb-4 w-40 h-40 rounded-full object-cover"
           />
           <p className="text-lg italic">{testimonials[index].quote}</p>
           <p className="mt-2 font-semibold text-gray-300">
