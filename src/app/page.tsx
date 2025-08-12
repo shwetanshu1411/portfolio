@@ -3,7 +3,8 @@ import Navbar from "@/components/Navbar";
 import TypewriterEffectSmoothDemo from "@/components/Herosection";
 import Skill from "@/components/Skill";
 import Project from "@/components/Project";
-import Services from "@/components/Services";
+// ✅ Fixed import - use the correct component name
+import AnimatedTestimonialsDemo from "@/components/Services";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
 
@@ -15,11 +16,11 @@ export default function Home() {
       <section id="skill"><Skill /></section>
       <section id="project"><Project/></section>
       <section id="service">
-        <Services testimonials={[]} />
+        {/* ✅ Removed testimonials prop and used correct component name */}
+        <AnimatedTestimonialsDemo />
       </section>
       <section id="contact"><Contact /></section>
       <Footer />
-
     </main>
   );
 }
