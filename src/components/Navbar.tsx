@@ -1,46 +1,6 @@
 
 
 
-// "use client";
-// import React, { useState } from "react";
-// import { Menu } from "@/components/ui/navbar-menu";
-// import { cn } from "@/lib/utils";
-// import { Menu as MenuIcon, X } from "lucide-react"; // using lucide-react icons
-
-// interface NavbarProps {
-//   className?: string;
-// }
-
-// function Navbar({ className }: NavbarProps) {
-//   const [isOpen, setIsOpen] = useState(false); // mobile menu toggle
-//   const [active, setActive] = useState<string | null>(null); // track active menu item
-
-
-//     console.log(active); 
-//   return (
-//     <div className={cn("fixed top-0 inset-x-0 max-w-2xl mx-auto z-50", className)}>
-//       {/* Hamburger for mobile */}
-//       <div className="lg:hidden flex justify-end px-6">
-//         <button onClick={() => setIsOpen(!isOpen)} className="text-white dark:text-white">
-//           {isOpen ? <X size={28} /> : <MenuIcon size={28} />}
-//         </button>
-//       </div>
-
-//       {/* Menu for both desktop and mobile */}
-//      <Menu isOpen={isOpen} setActive={setActive}>
-//   <a href="#home" onClick={() => setActive("home")}>Home</a>
-//   <a href="#skill" onClick={() => setActive("skill")}>Skills</a>
-//   <a href="#project" onClick={() => setActive("project")}>Projects</a>
-//   <a href="#service" onClick={() => setActive("service")}>Services</a>
-//   <a href="#contact" onClick={() => setActive("contact")}>Contact</a>
-// </Menu>
-//     </div>
-//   );
-// }
-
-// export default Navbar;
-
-
 
 
 "use client";
@@ -138,7 +98,7 @@ function Navbar({ className }: NavbarProps) {
           <div className="lg:hidden">
             <div className="flex items-center justify-between">
               {/* Name/Logo */}
-              <h1 className="text-xl font-bold text-white">Shwetanshu</h1>
+              <h1 className="text-xl font-bold text-white">Shwetanshu.in</h1>
               
               {/* Hamburger Menu */}
               <button
