@@ -42,7 +42,7 @@ function Navbar({ className }: NavbarProps) {
     { href: "https://github.com/shwetanshu1411", icon: Github, label: "GitHub" },
     { href: "https://www.instagram.com/shwe_tanshukumar?igsh=YmVlYW50MGJ0dXBt", icon: Instagram, label: "Instagram" },
     { href: "https://www.linkedin.com/in/shwetanshu-kumar-9089a1217?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", icon: Linkedin, label: "LinkedIn" },
-    { href: "/resume.pdf", icon: FileText, label: "Resume" }
+    { href: "https://drive.google.com/file/d/10dvu-7pNxIkXCtHxBK6n4QPiN9yMmMa5/view?usp=sharing", icon: FileText, label: "Resume" }
   ];
 
   return (

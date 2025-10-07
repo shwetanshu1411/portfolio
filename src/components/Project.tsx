@@ -113,14 +113,14 @@ import project4 from "@/app/ai-coach.png";
 
 export function ThreeDCardDemo() {
   return (
-    <div id="projects" className="flex flex-col items-center justify-center py-6 pb-4 bg-black text-white px-6">
+    <div id="projects" className="flex flex-col items-center justify-center py-6  bg-black text-white px-6">
       {/* Project Title */}
-      <h1 className="mt-10 text-4xl md:text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-neutral-50 to-neutral-400 text-center">
+      <h1 className="mt-4 text-4xl md:text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-neutral-50 to-neutral-400 text-center">
         Projects
       </h1>
 
       {/* ✅ Grid Layout */}
-      <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Project 1 */}
         <CardContainer className="inter-var">
           <CardBody className="bg-gray-500 relative group/card dark:hover:shadow-2xl 

@@ -231,7 +231,7 @@ export default function SkillSection() {
   return (
     <section id="skills" className="py-12  px-6 md:px-12 lg:px-24 bg-black/[0.96] antialiased bg-grid-white/[0.02] overflow-hidden">
       <div className="container">
-        <h2 className="mt-10 text-4xl md:text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-neutral-50 to-neutral-400 text-center mb-12">
+        <h2 className="mt-4 text-4xl md:text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-neutral-50 to-neutral-400 text-center mb-8">
           My Skills
         </h2>
 

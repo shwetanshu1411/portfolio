@@ -24,7 +24,7 @@ export function TypewriterEffectSmoothDemo() {
   ];
 
   return (
-    <div className="container flex flex-col md:flex-row items-center justify-between py-20 md:py-28 px-6 md:px-16 lg:px-24 gap-10 md:gap-16">
+    <div className="container flex flex-col md:flex-row items-center justify-between py-12 md:py-16 px-6 md:px-16 lg:px-24 gap-10 md:gap-16">
       {/* Left Side: Text Content */}
       <div className="md:w-1/2 w-full space-y-6 text-center md:text-left">
         <TypewriterEffectSmooth words={words} />

@@ -47,8 +47,8 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="flex flex-col items-center justify-center py-8 pt-4 bg-black text-white px-6">
-      <h1 className="mt-20 text-4xl md:text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-neutral-50 to-neutral-400 text-center">
+    <div id="contact" className="flex flex-col items-center justify-center py-6  bg-black text-white px-6">
+      <h1 className="mt-4 text-4xl md:text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-neutral-50 to-neutral-400 text-center">
         Contact
       </h1>
 
